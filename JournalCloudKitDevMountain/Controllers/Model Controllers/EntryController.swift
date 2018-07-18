@@ -23,7 +23,7 @@ class EntryController {
         CKContainer.default().privateCloudDatabase.save(entryCloudKitRecord) { (cloudKitRecord, error) in
             
             if let error = error {
-                print("there was an error in > EntryController.swift line 27: \(error.localizedDescription) ")
+                print("there was an error saving to CloudKit in > EntryController.swift line 27: \(error.localizedDescription) ")
             } else {
                 self.entries.append(entry)
             }
@@ -46,9 +46,38 @@ class EntryController {
     
     func fetchEntries(completion: @escaping(_ success: Bool) -> Void) {
         
+        let predicate = NSPredicate(value: true)
         
+        let cloudKitQuery = CKQuery(recordType: "Entry", predicate: predicate)
+        
+        CKContainer.default().privateCloudDatabase.perform(cloudKitQuery, inZoneWith: nil) { (cloudKitRecords, error) in
+            
+            if let error = error {
+                print("there was an error fetching from CloudKit in > EntryController.swift line 56: \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+            
+            guard let cloudKitRecords = cloudKitRecords else {
+                completion(false)
+                return
+            }
+            
+            var newEntries: [Entry] = []
+            
+            for cloudKitRecord in cloudKitRecords {
+                guard var newEntryFromCloud = Entry(cloudKitRecord: cloudKitRecord) else {
+                    print("there was an error in Entry's failable initializer while using it in > EntryController.swift line 70")
+                    return
+                }
+                newEntries.append(newEntryFromCloud)
+            }
+            
+            self.entries = newEntries
+            
+            completion(true)
+        }
     }
-    
 }
 
 
