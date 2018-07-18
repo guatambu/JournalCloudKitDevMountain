@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FA7DC35F20FFB6C5004FECFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC35E20FFB6C5004FECFA /* AppDelegate.swift */; };
-		FA7DC36120FFB6C5004FECFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC36020FFB6C5004FECFA /* ViewController.swift */; };
 		FA7DC36420FFB6C5004FECFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7DC36220FFB6C5004FECFA /* Main.storyboard */; };
 		FA7DC36620FFB6C5004FECFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7DC36520FFB6C5004FECFA /* Assets.xcassets */; };
 		FA7DC36920FFB6C5004FECFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7DC36720FFB6C5004FECFA /* LaunchScreen.storyboard */; };
 		FA7DC37420FFB6C5004FECFA /* JournalCloudKitDevMountainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC37320FFB6C5004FECFA /* JournalCloudKitDevMountainTests.swift */; };
+		FA7DC38120FFB6D1004FECFA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7DC38020FFB6D1004FECFA /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		FA7DC35B20FFB6C5004FECFA /* JournalCloudKitDevMountain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCloudKitDevMountain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7DC35E20FFB6C5004FECFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA7DC36020FFB6C5004FECFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA7DC36320FFB6C5004FECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7DC36520FFB6C5004FECFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7DC36820FFB6C5004FECFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,8 @@
 		FA7DC36F20FFB6C5004FECFA /* JournalCloudKitDevMountainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalCloudKitDevMountainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7DC37320FFB6C5004FECFA /* JournalCloudKitDevMountainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalCloudKitDevMountainTests.swift; sourceTree = "<group>"; };
 		FA7DC37520FFB6C5004FECFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7DC37E20FFB6CE004FECFA /* JournalCloudKitDevMountain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JournalCloudKitDevMountain.entitlements; sourceTree = "<group>"; };
+		FA7DC38020FFB6D1004FECFA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7DC38120FFB6D1004FECFA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +64,7 @@
 				FA7DC35D20FFB6C5004FECFA /* JournalCloudKitDevMountain */,
 				FA7DC37220FFB6C5004FECFA /* JournalCloudKitDevMountainTests */,
 				FA7DC35C20FFB6C5004FECFA /* Products */,
+				FA7DC37F20FFB6D1004FECFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +80,12 @@
 		FA7DC35D20FFB6C5004FECFA /* JournalCloudKitDevMountain */ = {
 			isa = PBXGroup;
 			children = (
-				FA7DC35E20FFB6C5004FECFA /* AppDelegate.swift */,
-				FA7DC36020FFB6C5004FECFA /* ViewController.swift */,
-				FA7DC36220FFB6C5004FECFA /* Main.storyboard */,
-				FA7DC36520FFB6C5004FECFA /* Assets.xcassets */,
-				FA7DC36720FFB6C5004FECFA /* LaunchScreen.storyboard */,
-				FA7DC36A20FFB6C5004FECFA /* Info.plist */,
+				FA7DC38420FFB71C004FECFA /* Models */,
+				FA7DC38320FFB713004FECFA /* Views */,
+				FA7DC38520FFB727004FECFA /* Controllers */,
+				FA7DC38620FFB731004FECFA /* Helper Files */,
+				FA7DC38220FFB6EC004FECFA /* App Resources */,
+				FA7DC37E20FFB6CE004FECFA /* JournalCloudKitDevMountain.entitlements */,
 			);
 			path = JournalCloudKitDevMountain;
 			sourceTree = "<group>";
@@ -94,6 +97,70 @@
 				FA7DC37520FFB6C5004FECFA /* Info.plist */,
 			);
 			path = JournalCloudKitDevMountainTests;
+			sourceTree = "<group>";
+		};
+		FA7DC37F20FFB6D1004FECFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DC38020FFB6D1004FECFA /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA7DC38220FFB6EC004FECFA /* App Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DC35E20FFB6C5004FECFA /* AppDelegate.swift */,
+				FA7DC36520FFB6C5004FECFA /* Assets.xcassets */,
+				FA7DC36A20FFB6C5004FECFA /* Info.plist */,
+			);
+			path = "App Resources";
+			sourceTree = "<group>";
+		};
+		FA7DC38320FFB713004FECFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DC36220FFB6C5004FECFA /* Main.storyboard */,
+				FA7DC36720FFB6C5004FECFA /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA7DC38420FFB71C004FECFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7DC38520FFB727004FECFA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DC38720FFB765004FECFA /* Model Controllers */,
+				FA7DC38820FFB76F004FECFA /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA7DC38620FFB731004FECFA /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		FA7DC38720FFB765004FECFA /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FA7DC38820FFB76F004FECFA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +214,14 @@
 					FA7DC35A20FFB6C5004FECFA = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					FA7DC36E20FFB6C5004FECFA = {
 						CreatedOnToolsVersion = 9.2;
@@ -199,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7DC36120FFB6C5004FECFA /* ViewController.swift in Sources */,
 				FA7DC35F20FFB6C5004FECFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,9 +427,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JournalCloudKitDevMountain/JournalCloudKitDevMountain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9FXT6FZ5X;
-				INFOPLIST_FILE = JournalCloudKitDevMountain/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalCloudKitDevMountain/App Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dundak.JournalCloudKitDevMountain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,9 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JournalCloudKitDevMountain/JournalCloudKitDevMountain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9FXT6FZ5X;
-				INFOPLIST_FILE = JournalCloudKitDevMountain/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalCloudKitDevMountain/App Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dundak.JournalCloudKitDevMountain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
