@@ -38,6 +38,16 @@ class Entry {
     }
 }
 
+extension Entry: Equatable {
+
+    static func == (lhs: Entry, rhs: Entry) -> Bool {
+        return
+            lhs.title == rhs.title &&
+            lhs.text == rhs.text &&
+            lhs.cloudKitRecordID == rhs.cloudKitRecordID
+    }
+}
+
 extension CKRecord {
     
     convenience init(withEntry: Entry) {
@@ -45,6 +55,8 @@ extension CKRecord {
         self.setValue(withEntry, forKey: "Entry")
     }
 }
+
+
 
 
 
