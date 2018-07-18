@@ -14,6 +14,7 @@
 		FA7DC37420FFB6C5004FECFA /* JournalCloudKitDevMountainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC37320FFB6C5004FECFA /* JournalCloudKitDevMountainTests.swift */; };
 		FA7DC38120FFB6D1004FECFA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7DC38020FFB6D1004FECFA /* CloudKit.framework */; };
 		FA7DC38A20FFB977004FECFA /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC38920FFB977004FECFA /* Entry.swift */; };
+		FA7DC38C20FFC19D004FECFA /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC38B20FFC19D004FECFA /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		FA7DC37E20FFB6CE004FECFA /* JournalCloudKitDevMountain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JournalCloudKitDevMountain.entitlements; sourceTree = "<group>"; };
 		FA7DC38020FFB6D1004FECFA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FA7DC38920FFB977004FECFA /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		FA7DC38B20FFC19D004FECFA /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		FA7DC38720FFB765004FECFA /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA7DC38B20FFC19D004FECFA /* EntryController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7DC38C20FFC19D004FECFA /* EntryController.swift in Sources */,
 				FA7DC38A20FFB977004FECFA /* Entry.swift in Sources */,
 				FA7DC35F20FFB6C5004FECFA /* AppDelegate.swift in Sources */,
 			);
