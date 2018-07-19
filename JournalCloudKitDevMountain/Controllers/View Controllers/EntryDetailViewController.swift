@@ -42,11 +42,25 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func saveEntryButtonTapped(_ sender: Any) {
         
+        guard   let title = titleTextField.text,
+                let bodyText = bodyTextView.text
+            else { return }
+        
+        EntryController.shared.addEntryWith(title: title, text: bodyText) { (success) in
+            if success {
+                print("save successful when initiated from > EntryDetailViewController.swift, line 51")
+            } else {
+                print("save failed when initiated from > EntryDetailViewController.swift, line 53")
+            }
+        }
+        
         self.navigationController?.popViewController(animated: true)
     }
     
     func updateViews() {
         guard let entry = entry else { return }
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.blue
         
         titleTextField.text = entry.title
         bodyTextView.text = entry.text

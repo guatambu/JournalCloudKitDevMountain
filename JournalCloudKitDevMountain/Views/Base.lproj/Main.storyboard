@@ -36,7 +36,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ryd-tS-Jt8" kind="show" id="beV-P3-aKh"/>
+                                    <segue destination="ryd-tS-Jt8" kind="show" identifier="toEntryDetail" id="beV-P3-aKh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
