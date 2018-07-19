@@ -15,6 +15,8 @@
 		FA7DC38120FFB6D1004FECFA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7DC38020FFB6D1004FECFA /* CloudKit.framework */; };
 		FA7DC38A20FFB977004FECFA /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC38920FFB977004FECFA /* Entry.swift */; };
 		FA7DC38C20FFC19D004FECFA /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC38B20FFC19D004FECFA /* EntryController.swift */; };
+		FA7DC38E20FFFFD6004FECFA /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC38D20FFFFD6004FECFA /* EntryListTableViewController.swift */; };
+		FA7DC39021000278004FECFA /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC38F21000278004FECFA /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		FA7DC38020FFB6D1004FECFA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FA7DC38920FFB977004FECFA /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		FA7DC38B20FFC19D004FECFA /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		FA7DC38D20FFFFD6004FECFA /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		FA7DC38F21000278004FECFA /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 		FA7DC38820FFB76F004FECFA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA7DC38D20FFFFD6004FECFA /* EntryListTableViewController.swift */,
+				FA7DC38F21000278004FECFA /* EntryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -282,6 +288,8 @@
 			files = (
 				FA7DC38C20FFC19D004FECFA /* EntryController.swift in Sources */,
 				FA7DC38A20FFB977004FECFA /* Entry.swift in Sources */,
+				FA7DC38E20FFFFD6004FECFA /* EntryListTableViewController.swift in Sources */,
+				FA7DC39021000278004FECFA /* EntryDetailViewController.swift in Sources */,
 				FA7DC35F20FFB6C5004FECFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
